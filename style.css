@@ -1,0 +1,75 @@
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #000000;
+  --item: #eef1f7;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --card: #2a2a2a;
+  --text: #ffffff;
+  --item: #3a3a3a;
+}
+
+body {
+  background: var(--bg);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--text);
+}
+
+.app {
+  background: var(--card);
+  padding: 20px;
+  width: 360px;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.input-area input,
+.input-area button {
+  padding: 8px;
+}
+
+.input-area button {
+  grid-column: span 2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: var(--item);
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-meta {
+  font-size: 12px;
+  opacity: 0.8;
+}
